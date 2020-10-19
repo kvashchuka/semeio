@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import stea
 import argparse
 from semeio import valid_file
@@ -38,7 +36,3 @@ def main_entry_point(args=None):
     for res, value in res.results(stea.SteaKeys.CORPORATE).items():
         with open("{}_0".format(res), "w") as ofh:
             ofh.write("{}\n".format(value))
-
-
-if __name__ == "__main__":
-    main_entry_point()

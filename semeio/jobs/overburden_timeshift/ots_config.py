@@ -87,16 +87,18 @@ def build_schema():
                 MK.Description: "Path to result irap file, the surface mapped to "
                 "the velocity grid, with the depth of horizon.",
                 MK.Default: None,
+                MK.AllowNone: True,
             },
             "eclbase": {
                 MK.Type: types.String,
                 MK.Description: "Path to the Eclipse case.",
             },
-            "ascii": {
+            "vintages_export_file": {
                 MK.Type: types.String,
                 MK.Description: "Path to resulting text file, which contains all "
                 "computed vintage pair dates: lines of x, y, z, ts1, ts2, ts3....",
                 MK.Default: None,
+                MK.AllowNone: True,
             },
             "velocity_model": {
                 MK.Type: types.String,
