@@ -13,6 +13,7 @@ from semeio.forward_models import (
     Pyscal,
     RemoveNoSim,
     ReplaceString,
+    RunCirrus,
 )
 
 
@@ -117,4 +118,5 @@ def installable_forward_model_steps():
         InsertNoSim,
         RemoveNoSim,
         ReplaceString,
+        RunCirrus,
     ]
